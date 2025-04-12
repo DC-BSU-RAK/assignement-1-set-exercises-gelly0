@@ -1,0 +1,55 @@
+* { 
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg,
+      #FFD93B,  /* Joy */
+      #4A90E2,  /* Sadness */
+      #E03C31,  /* Anger */
+      #7BC043,  /* Disgust */
+      #9B59B6,  /* Fear */
+      #FF6F61,  /* Anxiety */
+      #9E9E9E,  /* Ennui */
+      #F48FB1   /* Embarrassment */
+    );
+    background-size: 1600% 1600%; /* background size */
+    animation: gradientFlow 20s ease infinite; /* Animation */
+    font-family: Arial, sans-serif; /* Font size */
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.5rem; /* Font size */
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    text-align: center;
+  }
+  
+  video {
+    width: 480px;
+    height: 270px; /* Maintains 16:9 aspect ratio */
+    border: none; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Width & Height */
+  @media (max-width: 850px) {
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }  
