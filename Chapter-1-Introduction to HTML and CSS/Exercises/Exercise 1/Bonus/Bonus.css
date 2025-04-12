@@ -1,0 +1,86 @@
+:root {
+    --bg: #ffffff;         /* Background color */
+    --text: #333333;       /* Main text color */
+    --primary: #5a247a;    /* Primary accent color */
+    --accent: #f0f0f5;     /* Light accent color for borders and highlights */
+    --code-bg: #f9f9f9;    /* Background color for code blocks */
+  }
+  
+  /* Apply box-sizing globally */
+  * {
+    box-sizing: border-box;
+    /* Remove default margin/padding */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Base styles for the body */
+  body {
+    font-family: 'Segoe UI', sans-serif; /* Font */
+    background-color: var(--bg);         
+    color: var(--text);                  /* Use main text color */
+    line-height: 1.6;                    
+    padding: 2rem;                       
+  }
+  
+  /* Header section */
+  header {
+    text-align: center;        
+    margin-bottom: 2rem;        
+    color: var(--primary);   
+  }
+  
+  /* Main heading (h1) style */
+  h1 {
+    font-size: 2.5rem;      
+  }
+  
+  /* Section headings (h2) */
+  h2 {
+    font-size: 2rem;                       
+    margin-top: 2rem;                     
+    color: var(--primary);  
+    border-bottom: 2px solid var(--accent); 
+    padding-bottom: 0.5rem;               
+  }
+  
+  /* Subheadings (h3) */
+  h3 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.5rem;     /* Top/bottom spacing */
+    color: #222;               /* Slightly darker than base text */
+  }
+  
+  /* Paragraph styling */
+  p {
+    margin-bottom: 0.5rem;       /* Space below each paragraph */
+  }
+  
+  /* Space between each section */
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  /* Code block container (preformatted text) */
+  pre {
+    background-color: var(--code-bg);        
+    padding: 1rem;                            
+    border-left: 4px solid var(--primary);   
+    overflow-x: auto;                        
+    margin: 0.5rem 0 1.5rem;     /* Vertical spacing */
+  }
+  
+  /* Inline and block code text */
+  code {
+    font-family: 'Courier New', Courier, monospace; 
+    color: #000;                                     
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;                /* Centered footer content */
+    margin-top: 4rem;                  /* Large space above */
+    padding-top: 1rem;                 /* Space inside top */
+    border-top: 1px solid var(--accent); /* Light top border */
+    color: #777;                       /* Muted text color */
+  }  
