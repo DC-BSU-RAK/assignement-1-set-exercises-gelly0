@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Exercise 6.css">
+    <script src="Exercise 6.js"></script>
+</head>
+
+<body>
+    <!-- Main container for the entire calculator -->
+    <div class="container">
+        <!-- Main heading of the calculator -->
+        <h1>Petrol Calculator</h1>
+
+        <!-- Wrapper for input fields -->
+        <div class="wrapper">
+            <!-- Input for petrol price per liter -->
+            <div>
+                <p>Petrol Cost (per liter):</p>
+                <input id="Petrol_Price" placeholder="1.72" type="number">
+            </div>
+
+            <!-- Input for number of liters purchased -->
+            <div>
+                <p>Liters purchased:</p>
+                <input id="liters" placeholder="1" type="number">
+            </div>
+        </div>
+
+        <!-- Section containing the calculate button and result -->
+        <div id="btn">
+            <!-- Button that triggers the calculation -->
+            <button onclick="calculate()">Calculate</button>
+
+            <!-- Heading for the total amount result -->
+            <h2>Total Amount:</h2>
+
+            <!-- Output for the calculated amount -->
+            <h2 id="totalAmount"></h2>
+        </div>
+    </div>
+</body>
+</html>

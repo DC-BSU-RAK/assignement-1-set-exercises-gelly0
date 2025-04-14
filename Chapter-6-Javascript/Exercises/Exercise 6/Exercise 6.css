@@ -1,0 +1,94 @@
+/* Reset margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style for the entire body of the page */
+body {
+  font-family: Arial, sans-serif;  /* Set the font family */
+  background-color: #000;  /* Set the background color to black */
+  display: flex;  /* Use Flexbox layout */
+  justify-content: center;  /* Center content horizontally */
+  align-items: center;  /* Center content vertically */
+  height: 100vh;  /* Full viewport height */
+  color: #ccc;  /* Light grey text color */
+}
+
+/* Main container styling */
+.container {
+  background-color: #111;  /* Dark background for the container */
+  padding: 30px;  /* Padding inside the container */
+  border-radius: 8px;  /* Rounded corners */
+  box-shadow: 0 0 20px rgba(128, 0, 128, 0.7);  /* Purple glow shadow */
+  width: 320px;  /* Set width of the container */
+  text-align: center;  /* Center the text inside the container */
+}
+
+/* Header styling */
+.container h1 {
+  font-size: 24px;  /* Set the font size */
+  margin-bottom: 20px;  /* Add margin below the header */
+  color: #ccc;  /* Light grey color for text */
+}
+
+/* Wrapper for input fields */
+.wrapper {
+  margin-bottom: 20px;  /* Add space below the wrapper */
+}
+
+/* Styling for labels inside the wrapper */
+.wrapper p {
+  font-size: 14px;  /* Set the font size for the label */
+  margin-bottom: 8px;  /* Add space below the label */
+  text-align: left;  /* Align the label text to the left */
+  color: #ccc;  /* Light grey text color */
+}
+
+/* Input field styling */
+input {
+  width: 100%;  /* Full width of the container */
+  padding: 10px;  /* Add padding inside the input */
+  margin-bottom: 15px;  /* Add margin below the input */
+  border: 1px solid #555;  /* Light border */
+  border-radius: 4px;  /* Rounded corners for the input */
+  font-size: 14px;  /* Set font size for text */
+  background-color: #222;  /* Dark background for the input */
+  color: #ccc;  /* Light grey text color */
+  transition: box-shadow 0.3s ease;  /* Smooth transition for focus effect */
+}
+
+/* Focus state for input fields */
+input:focus {
+  outline: none;  /* Remove default outline */
+  border-color: purple;  /* Change border color to purple */
+  box-shadow: 0 0 10px purple;  /* Add purple glow around input */
+}
+
+/* Button styling */
+#btn button {
+  width: 100%;  /* Full width of the container */
+  padding: 10px;  /* Add padding inside the button */
+  background-color: purple;  /* Set background color to purple */
+  color: #fff;  /* White text color */
+  border: none;  /* Remove border */
+  border-radius: 4px;  /* Rounded corners for the button */
+  font-size: 16px;  /* Set font size */
+  cursor: pointer;  /* Pointer cursor on hover */
+  transition: background-color 0.3s;  /* Smooth background color transition */
+  box-shadow: 0 0 10px rgba(128, 0, 128, 0.5);  /* Purple glow shadow */
+}
+
+/* Hover effect for the button */
+#btn button:hover {
+  background-color: #9b30ff;  /* Change to a lighter purple on hover */
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.8);  /* Stronger purple glow on hover */
+}
+
+/* Output area styling */
+#btn h2 {
+  margin-top: 20px;  /* Add space above the output */
+  font-size: 16px;  /* Set font size */
+  color: #ccc;  /* Light grey text color */
+}
