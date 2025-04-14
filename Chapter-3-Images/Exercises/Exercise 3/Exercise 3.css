@@ -1,0 +1,52 @@
+/* Styles the entire page body */
+body {
+  font-family: Arial, sans-serif; /* Sets a clean, modern font */
+  max-width: 1200px;              /* Limits the content width for readability */
+  margin: 50px auto;              /* Adds vertical spacing and centers the content horizontally */
+  padding: 0 20px;                /* Adds horizontal padding inside the content area */
+  background-color: #ececec;      /* Sets a light gray background color */
+  color: #000000;                 /* Sets the text color to black */
+}
+
+/* Styles for main heading elements */
+h1 {
+  text-align: center;            
+  margin-bottom: 40px;           
+}
+
+/* Container for arranging images in a flexible row */
+.image-row {
+  display: flex;                 
+  justify-content: space-between; 
+  flex-wrap: wrap;              
+  gap: 20px;               
+}
+
+/* Individual card/container for each image */
+.image-card {
+  flex: 1;                       
+  min-width: 250px;             
+  max-width: 400px;            
+  text-align: center;          
+}
+
+/* Styles applied to the images */
+.styled-image {
+  filter: brightness(0.9) contrast(1.1) saturate(1.2); 
+  border-radius: 10px;         /* Rounds the corners of the image */
+  box-shadow: 0 5px 15px rgba(99, 99, 99, 0.705); /* Adds a soft shadow for depth */
+  transition: transform 0.3s ease; /* Smooth animation on hover */
+  width: 100%;                 /* Makes the image fill the width of its container */
+  height: auto;                /* Maintains aspect ratio */
+}
+
+/* Hover effect for image zoom animation */
+.styled-image:hover {
+  transform: scale(1.03);     
+}
+
+/* Styles for paragraph text */
+p {
+  font-size: 0.9rem;            /* Sets a slightly smaller font size for text */
+  margin-top: 10px;             /* Adds space above each paragraph */
+}
