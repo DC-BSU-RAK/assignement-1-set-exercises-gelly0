@@ -4,110 +4,126 @@
   box-sizing: border-box;
 }
 
+/* Base styles for the page */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #000;
+  font-family: Arial, sans-serif;       /* Set default font */
+  background-color: #fff;               /* White background */
+  color: #000;                          /* Black text color */
 }
 
+/* Header styles */
 header {
-  background-color: #21003a;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
+  background-color: #21003a;            /* Deep purple background */
+  color: #fff;                          /* White text */
+  text-align: center;                   /* Center-align content */
+  padding: 20px 0;                      /* Vertical padding */
 }
 
+/* Main heading inside header */
 header h1 {
-  font-size: 2.5em;
-  text-decoration: underline;
+  font-size: 2.5em;                     /* Large font size */
+  text-decoration: underline;           /* Underlined text */
 }
 
+/* Navigation styles */
 nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-  gap: 30px;
+  list-style: none;                     /* Remove bullet points */
+  display: flex;                        /* Display list items in a row */
+  justify-content: center;             /* Center navigation */
+  margin-top: 15px;                     /* Space above nav */
+  gap: 30px;                            /* Space between links */
 }
 
+/* Navigation links */
 nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2em;
+  color: white;                         /* White link text */
+  text-decoration: none;                /* Remove underline */
+  font-size: 1.2em;                     /* Slightly larger text */
 }
 
+/* Main content layout */
 main {
-  display: flex;
-  gap: 40px;
-  padding: 40px 0 40px 40px;
+  display: flex;                        /* Arrange children in a row */
+  gap: 40px;                            /* Space between welcome and lineup */
+  padding: 40px 0 40px 40px;            /* Top, bottom, and left padding */
 }
 
+/* Welcome section */
 .welcome {
-  width: 65%;
+  width: 65%;                           /* Take up 65% of the width */
 }
 
+/* Welcome section heading */
 .welcome h2 {
-  font-size: 1.8em;
-  text-decoration: underline;
-  margin-bottom: 15px;
+  font-size: 1.8em;                     /* Larger heading */
+  text-decoration: underline;          /* Underline for emphasis */
+  margin-bottom: 15px;                 /* Space below heading */
 }
 
+/* Welcome section paragraph */
 .welcome p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+  font-size: 1.1em;                     /* Readable paragraph size */
+  margin-bottom: 20px;                 /* Space below paragraph */
 }
 
+/* Welcome section image */
 .welcome img {
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 0px;
+  width: 100%;                          /* Full width of container */
+  border: 1px solid #ccc;              /* Light border */
+  border-radius: 0px;                  /* No rounded corners */
 }
 
+/* Lineup (aside) section */
 .lineup {
-  width: 40%;
-  background-color: #193c72;
-  color: white;
-  padding: 30px;
-  border-radius: 0px;
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
+  width: 40%;                           /* Take up 40% of width */
+  background-color: #193c72;           /* Dark blue background */
+  color: white;                         /* White text */
+  padding: 30px;                        /* Padding inside box */
+  border-radius: 0px;                  /* No rounded corners */
+  margin-left: auto;                   /* Align to the right */
+  display: flex;                       /* Flex container */
+  flex-direction: column;             /* Stack children vertically */
+  align-items: flex-start;            /* Align items to the left */
+  gap: 30px;                           /* Space between items */
 }
 
+/* Lineup section heading */
 .lineup h3 {
-  font-size: 1.8em;
-  text-decoration: underline;
-  margin-bottom: 10px;
+  font-size: 1.8em;                     /* Heading size */
+  text-decoration: underline;          /* Underline for emphasis */
+  margin-bottom: 10px;                 /* Space below heading */
 }
 
+/* List of events in lineup */
 .lineup ul {
-  list-style-type: none;
-  font-size: 1.2em;
-  line-height: 2;
-  padding-left: 0;
-  margin-bottom: 20px;
+  list-style-type: none;               /* No bullet points */
+  font-size: 1.2em;                    /* Larger list text */
+  line-height: 2;                      /* Space between list items */
+  padding-left: 0;                     /* Remove left padding */
+  margin-bottom: 20px;                 /* Space below list */
 }
 
+/* Container for lineup images */
 .lineup .images {
-  display: flex;
-  flex-wrap: nowrap; /* Ensures they stay on the same line */
-  justify-content: space-between;
-  gap: 10px;
-  width: 100%;
+  display: flex;                       /* Display images in a row */
+  flex-wrap: nowrap;                  /* Do not wrap to next line */
+  justify-content: space-between;     /* Spread images evenly */
+  gap: 10px;                           /* Gap between images */
+  width: 100%;                         /* Full width */
 }
 
+/* Images in the lineup section */
 .lineup .images img {
-  width: 50%; /* Equal size, perfectly side by side */
-  height: auto;
-  object-fit: cover;
+  width: 50%;                          /* Each image takes up half the space */
+  height: auto;                        /* Maintain aspect ratio */
+  object-fit: cover;                   /* Fill space without distortion */
 }
 
+/* Footer styles */
 footer {
-  background-color: #a12fe1;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 1em;
+  background-color: #a12fe1;           /* Bright purple background */
+  color: white;                        /* White text */
+  text-align: center;                  /* Center-align content */
+  padding: 15px;                       /* Padding inside footer */
+  font-size: 1em;                      /* Standard font size */
 }
