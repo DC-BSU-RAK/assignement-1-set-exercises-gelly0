@@ -1,0 +1,42 @@
+.container {
+  display: flex;           /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  flex-wrap: wrap;        /* Allow wrapping of items */
+  height: 100vh;          /* Full height of the viewport */
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  margin: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
+  font-family: sans-serif;
+  background: white;
+}
+
+#A {
+  border: 5px solid purple;
+  box-shadow: 20px 20px 20px red;
+}
+
+#B {
+  border: 5px solid lime;
+  box-shadow: inset 20px 20px 30px black;
+}
+
+#C {
+  border: 5px solid orange;
+  border-radius: 40px;
+  box-shadow: 
+    0 0 0 10px blue,
+    0 0 0 20px red,
+    0 0 0 30px green;
+}
+
+#D {
+  border: 5px solid brown;
+}
