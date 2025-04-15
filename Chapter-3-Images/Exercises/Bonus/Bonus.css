@@ -12,31 +12,34 @@ div {
   width: 200px;             /* Fixed width */
   height: 200px;            /* Fixed height */
   margin: 40px;             /* Space around each box */
-  display: inline-block;    /* Make each div behave like an inline-level block */
-  text-align: center;       /* Center text horizontally */
-  line-height: 200px;       /* Center text vertically (matches the height) */
-  font-size: 30px;          /* Large text size */
-  font-family: sans-serif;  /* Clean sans-serif font */
-  background: white;        /* White background */
+  display: inline-block;
+  font-size: 16px;
+  font-family: sans-serif;
+  background: white;
+  text-align: center;
+  line-height: normal;
+  padding-top: 30px;        
+  vertical-align: top;
+  box-sizing: border-box;   /* Includes padding and border inside width/height */
 }
 
 /* Styles specific to the div with ID "A" */
 #A {
-  border: 5px solid purple;         /* Purple border */
-  box-shadow: 20px 20px 20px red;   /* Red drop shadow offset to bottom-right */
+  border: 5px solid purple;
+  box-shadow: 20px 20px 20px red;
 }
 
 /* Styles specific to the div with ID "B" */
 #B {
-  border: 5px solid lime;                   /* Lime green border */
-  box-shadow: inset 20px 20px 30px black;   /* Inset black shadow for inner depth */
+  border: 5px solid lime;
+  box-shadow: inset 20px 20px 30px black;
 }
 
 /* Styles specific to the div with ID "C" */
 #C {
-  border: 5px solid orange;   /* Orange border */
-  border-radius: 40px;        /* Rounded corners */
-  box-shadow:                 /* Multiple layered shadows for a colorful outline effect */
+  border: 5px solid orange;
+  border-radius: 40px;
+  box-shadow:
     0 0 0 10px blue,
     0 0 0 20px red,
     0 0 0 30px green;
@@ -44,5 +47,6 @@ div {
 
 /* Styles specific to the div with ID "D" */
 #D {
-  border: 5px solid brown;    /* Brown border */
+  border: 5px solid brown;
+  text-shadow: rgba(0, 0, 0, 0.547) 5px 5px 1px;
 }
