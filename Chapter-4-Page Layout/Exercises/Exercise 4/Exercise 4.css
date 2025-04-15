@@ -106,12 +106,12 @@ main {
 .lineup .images {
   display: flex;
   justify-content: space-between;
-  gap: 2px; /* Tiny gap between images */
-  width: 100%;
+  gap: 3px; /* Tiny gap between images */
+  width: 90%;
 }
 
 .lineup .images img {
-  width: 47%; 
+  width: 48%; 
   height: auto;
   object-fit: cover; /* Ensures images fill their container nicely */
 }
